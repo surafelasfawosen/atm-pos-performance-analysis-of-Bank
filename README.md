@@ -25,8 +25,8 @@ By building a deterministic performance-scoring pipeline, we eliminate guesswork
   - *Why it was needed:* To mathematically find the exact point where adding more clusters stops providing massive improvements to the internal cluster error. 
   - *How it helped:* The graph revealed a distinct "elbow" at `K=4`. Stopping at 4 clusters provided the perfect "sweet spot" between **mathematical accuracy** (low error) and **business interpretability** (avoiding an overly complicated 5 or 6 tier system).
 - **Deterministic Dynamic Ranking (Performance Scoring):** Standard K-Means assigns cluster labels entirely at random (e.g., Cluster 0, 1, 2, 3), which have no inherent business meaning. 
-  - *The Solution:* We engineered a custom **Performance Scoring Formula**: `Score = (Normalized Volume + Normalized Amount) - Normalized Failure Rate`. 
-  - *How it helped:* By calculating the mathematical center (centroid) of each cluster and evaluating it against this formula, our pipeline dynamically sorts and labels the clusters into strictly accurate business tiers: *Low, Medium, High, and Very High*. This guarantees that a "Very High" label is mathematically proven to be the most optimal group, completely eliminating manual guesswork.
+  - *The Solution:* I engineered a custom **Performance Scoring Formula**: `Score = (Normalized Volume + Normalized Amount) - Normalized Failure Rate`. 
+  - *How it helped:* By calculating the mathematical center (centroid) of each cluster and evaluating it against this formula, my pipeline dynamically sorts and labels the clusters into strictly accurate business tiers: *Low, Medium, High, and Very High*. This guarantees that a "Very High" label is mathematically proven to be the most optimal group, completely eliminating manual guesswork.
 - **Geospatial Data Visualization:** Plotted exact geographical terminal density using `GeoPandas` and `Matplotlib`, resolving label overlaps with mathematical offset tracking.
 
 ---
@@ -36,7 +36,7 @@ A standard report stops at clustering. However, true business value is generated
 
 
 
-## 🚀 Final Strategic Recommendations
+##  Final Strategic Recommendations
 By synthesizing my geographic EDA distribution with the K-Means machine learning performance tiers, I extracted the following high-level strategic recommendations for the banking network:
 
 ### 💡 Insight 1: Capital Reallocation (Fixing Over-Deployment)
