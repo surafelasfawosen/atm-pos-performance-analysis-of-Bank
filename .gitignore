@@ -1,0 +1,20 @@
+# Ignore Datasets (Keep data private!)
+*.csv
+*.xlsx
+*.xls
+*.xlsb
+pos_NEW1.xlsx
+ATM24_25 full.xlsx
+
+# Ignore Jupyter Checkpoints and Python caches
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Private Folders
+private/
+private cbe post and atm analysis/
